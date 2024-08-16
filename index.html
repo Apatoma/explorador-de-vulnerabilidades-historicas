@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explorador de Vulnerabilidades Históricas</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="timeline">
+    <div class="container">
         <h1>Línea de Tiempo de Vulnerabilidades Famosas</h1>
         <div class="timeline-events">
             <div class="event" data-year="2000" data-description="El gusano ILOVEYOU se propagó a través del correo electrónico, infectando millones de computadoras en todo el mundo.">
@@ -34,8 +37,15 @@
                 <div class="date">2020</div>
                 <div class="description">SolarWinds Attack</div>
             </div>
-            <!-- Puedes añadir más eventos aquí -->
         </div>
+        <div id="event-details">
+            <p>Haz clic en un evento para ver los detalles.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
         <div id="event-details"></div>
     </div>
     <script src="script.js"></script>
