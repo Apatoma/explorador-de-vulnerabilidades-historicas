@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     events.forEach(event => {
         event.addEventListener("click", function() {
             const description = this.getAttribute("data-description");
-            eventDetails.textContent = description || "Detalles no disponibles.";
+            eventDetails.innerHTML = `<p>${description}</p>`;
         });
     });
 });
