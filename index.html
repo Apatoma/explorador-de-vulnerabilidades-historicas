@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorador de Vulnerabilidades Históricas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="timeline">
+        <h1>Línea de Tiempo de Vulnerabilidades Famosas</h1>
+        <div class="timeline-events">
+            <div class="event" data-year="2000" data-description="El gusano ILOVEYOU se propagó a través del correo electrónico, infectando millones de computadoras en todo el mundo.">
+                <div class="date">2000</div>
+                <div class="description">ILOVEYOU Worm</div>
+            </div>
+            <div class="event" data-year="2001" data-description="El gusano Code Red explotó una vulnerabilidad en los servidores de Microsoft IIS, afectando a más de 359,000 servidores en tan solo 14 horas.">
+                <div class="date">2001</div>
+                <div class="description">Code Red Worm</div>
+            </div>
+            <div class="event" data-year="2008" data-description="Conficker es un gusano que explotó una vulnerabilidad en Windows para formar una gran botnet. Se estima que infectó a millones de computadoras.">
+                <div class="date">2008</div>
+                <div class="description">Conficker</div>
+            </div>
+            <div class="event" data-year="2014" data-description="Heartbleed es una vulnerabilidad en OpenSSL que permitía a los atacantes leer la memoria del servidor y obtener información sensible como claves privadas.">
+                <div class="date">2014</div>
+                <div class="description">Heartbleed</div>
+            </div>
+            <div class="event" data-year="2017" data-description="WannaCry es un ransomware que afectó a más de 200,000 computadoras en todo el mundo, cifrando archivos y pidiendo un rescate en Bitcoin.">
+                <div class="date">2017</div>
+                <div class="description">WannaCry</div>
+            </div>
+            <div class="event" data-year="2020" data-description="El ataque SolarWinds comprometió actualizaciones de software de la empresa SolarWinds, afectando a numerosas agencias gubernamentales y empresas privadas.">
+                <div class="date">2020</div>
+                <div class="description">SolarWinds Attack</div>
+            </div>
+            <!-- Puedes añadir más eventos aquí -->
+        </div>
+        <div id="event-details"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
